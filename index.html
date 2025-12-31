@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Multiplayer Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="screen">
+            <h1 class="title">Multiplayer Setup</h1>
+            <div class="button-group">
+                <button id="hostBtn" class="btn btn-primary">Host Game</button>
+                <button id="joinBtn" class="btn btn-secondary">Join Game</button>
+            </div>
+        </div>
+
+        <div id="hostScreen" class="screen hidden">
+            <h2 class="title">Hosting Game</h2>
+            <p>Share this ID with the other player:</p>
+            <div class="peer-id-display">
+                <input type="text" id="hostPeerId" readonly>
+                <button id="copyBtn" class="btn btn-small">Copy</button>
+            </div>
+            <p class="status" id="hostStatus">Waiting for connection...</p>
+            <button id="cancelHost" class="btn btn-secondary">Cancel</button>
+        </div>
+
+        <div id="joinScreen" class="screen hidden">
+            <h2 class="title">Join Game</h2>
+            <p>Enter the host's Peer ID:</p>
+            <input type="text" id="joinPeerId" placeholder="Enter Peer ID">
+            <div class="button-group">
+                <button id="connectBtn" class="btn btn-primary">Connect</button>
+                <button id="cancelJoin" class="btn btn-secondary">Cancel</button>
+            </div>
+            <p class="status" id="joinStatus"></p>
+        </div>
+
+        <div id="gameScreen" class="screen hidden">
+            <h2 class="title">Connected!</h2>
+            <p class="status">You can now start your game</p>
+            <button id="startGame" class="btn btn-primary">Start Game</button>
+            <div id="gameContainer"></div>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/peerjs@1.5.5/dist/peerjs.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
