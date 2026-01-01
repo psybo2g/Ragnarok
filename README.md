@@ -2,7 +2,7 @@
 ### Quick preview: https://psybo2g.github.io/Ragnarok/
 ## 🎮 2D 1v1 Platformer
 
-A fun, competitive 2D platformer designed for 1v1 local play. This is a learning project focused on mastering character physics, combat mechanics, and LAN multiplayer using Peer JS.
+A fun, competitive 2D platformer designed for 1v1 local play. This is a learning project focused on mastering character physics, combat mechanics, and multiplayer using Peer JS(WebRTC).
 ## 🛑 License & Usage
 
 Copyright (c) 2024-2025 Psybo2g
@@ -14,7 +14,7 @@ Copyright (c) 2024-2025 Psybo2g
 
 This project is a 1v1 platformer where two players battle for dominance in a fast-paced arena.
  * Genre: 2D Platformer / Arena Fighter
- * Mode: 1v1 Local Multiplayer
+ * Mode: 1v1 Multiplayer
  * Status: Learning Project / Prototype
 ## Key Features
 
